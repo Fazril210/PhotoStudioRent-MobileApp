@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FotoStudioFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <GridLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:rowCount="3"
+           android:columnCount="2"
+           android:elevation="10dp"
+           android:layout_marginTop="10dp">
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp">
+           <ImageView
+               android:id="@+id/prewedding"
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:src="@drawable/prewedding2"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/prewedding"
+                   android:layout_centerHorizontal="true"
+                   android:text="Prewedding"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   tools:ignore="TextSizeCheck" />
+       </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp">
+               <ImageView
+                   android:id="@+id/maternity"
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"
+                   android:src="@drawable/maternity2"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/maternity"
+                   android:layout_centerHorizontal="true"
+                   android:text="Maternity"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   tools:ignore="TextSizeCheck" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp">
+               <ImageView
+                   android:id="@+id/group"
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"
+                   android:src="@drawable/group"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/group"
+                   android:layout_centerHorizontal="true"
+                   android:text="Group"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   tools:ignore="TextSizeCheck" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp">
+               <ImageView
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/family"
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"
+                   android:src="@drawable/family"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/family"
+                   android:layout_centerHorizontal="true"
+                   android:text="Family"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   tools:ignore="TextSizeCheck" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp">
+               <ImageView
+                   android:id="@+id/graduate"
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"
+                   android:src="@drawable/graduate"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/graduate"
+                   android:layout_centerHorizontal="true"
+                   android:text="Graduate"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   tools:ignore="TextSizeCheck" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp">
+               <ImageView
+                   android:id="@+id/couple"
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"
+                   android:src="@drawable/couple"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/couple"
+                   android:layout_centerHorizontal="true"
+                   android:text="Couple"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   tools:ignore="TextSizeCheck" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp">
+               <ImageView
+
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="15dp"
+                   android:textStyle="bold"
+                   android:layout_centerHorizontal="true" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp">
+               <ImageView
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   android:layout_centerHorizontal="true"/>
+           </RelativeLayout>
+       </GridLayout>
+   </ScrollView>
+
+</FrameLayout>

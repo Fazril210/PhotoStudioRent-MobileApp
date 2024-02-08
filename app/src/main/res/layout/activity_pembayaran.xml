@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradasi"
+    tools:context=".Pembayaran">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logostudiohitam"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logostudio"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logostudio"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/namaTextView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignStart="@id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/namaTextView"
+            android:id="@+id/tanggalTextView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignStart="@id/namaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/tanggalTextView"
+            android:id="@+id/jamTextView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignStart="@id/tanggalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/jamTextView"
+            android:id="@+id/sesiTextView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignStart="@id/jamTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/sesiTextView"
+            android:id="@+id/paketTextView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignStart="@id/sesiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/paketTextView"
+            android:id="@+id/totalTextView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignStart="@id/paketTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnPrint"
+            android:layout_below="@+id/totalTextView"
+            android:layout_marginTop="60dp"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/abu"
+            android:text="Cetak Struk"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/metode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/totalTextView"
+            android:layout_marginTop="200dp"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:text="Metode Pembayaran"/>
+
+
+
+        <ImageView
+            android:id="@+id/logobca"
+           android:layout_below="@id/metode"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="10dp"
+            android:src="@drawable/logobca"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rekening"
+            android:layout_above="@id/nomorrek"
+            android:text="No. Rekening:"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/nomorrek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logobca"
+            android:layout_centerInParent="true"
+            android:text="4061681706"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

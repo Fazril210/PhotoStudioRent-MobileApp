@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_halamanpembayaran">
+
+
+    <TextView
+        android:id="@+id/judul"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran \n    Transfer"
+        android:layout_marginTop="20dp"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/backgroundmain"
+       android:id="@+id/background1"
+       android:layout_below="@id/judul"
+       android:elevation="10dp"
+       android:layout_marginLeft="100dp"
+       android:layout_marginTop="20dp"
+       android:layout_centerHorizontal="true">
+       <ImageView
+           android:id="@+id/btnlogo"
+           android:layout_width="70dp"
+           android:layout_height="60dp"
+           android:layout_marginLeft="30dp"
+           android:src="@drawable/logobca"/>
+
+       <TextView
+           android:id="@+id/nomorrek"
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:layout_marginLeft="30dp"
+           android:layout_toRightOf="@id/btnlogo"
+           android:text="4061681706"
+           android:textSize="20dp"
+           android:textStyle="bold" />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_toRightOf="@id/nomorrek"
+    android:src="@drawable/copy"/>
+
+   </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/file"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/background1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/backgroundmain" />
+
+    <Button
+        android:id="@+id/pilih"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Pilih File"
+        android:background="@drawable/backgroundmain"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+       android:layout_below="@id/file"/>
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Upload \nBukti Pembayaran"
+        android:background="@drawable/backgroundmain"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pilih"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundputih"
+        android:elevation="12dp"
+        android:translationZ="8dp"
+        android:layout_marginTop="620dp">
+
+        <Button
+            android:id="@+id/button_lanjut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selesai"
+            android:background="@drawable/backgroundmain"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+
+</RelativeLayout>

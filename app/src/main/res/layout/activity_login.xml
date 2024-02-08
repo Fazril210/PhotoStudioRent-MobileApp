@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradasi"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="620dp"
+        android:src="@drawable/logostudio" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/backgroundtransparant">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk atau Daftar \nuntuk melanjutkan"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/warna1"
+            android:layout_marginTop="10dp"
+            android:textSize="15pt"/>
+
+        <EditText
+            android:id="@+id/ETusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judul"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/backgroundedittext"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="20dp"
+            android:hint="Username"
+            android:padding="15dp"
+            android:textSize="15dp"
+            tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/ETpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ETusername"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/backgroundedittext"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="15dp"
+            tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="55dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Belum punya akun?"/>
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Daftar"
+            android:layout_marginTop="340dp"/>
+</LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="Masuk"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/warna3"
+            android:layout_below="@id/ETpassword"/>
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="atau"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="630dp"/>
+    <View
+        android:layout_width="100dp"
+        android:layout_marginLeft="65dp"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="650dp"/>
+    <View
+        android:layout_width="100dp"
+        android:layout_marginLeft="225dp"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="650dp"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="680dp"
+        android:id="@+id/signIn"/>
+
+</RelativeLayout>

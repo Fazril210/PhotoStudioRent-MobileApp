@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradasi"
+    tools:context=".MainTipedanSesi">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logostudio"
+        android:layout_marginTop="30dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/background_putih"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundputih"
+        android:elevation="12dp"
+        android:translationZ="8dp"
+        android:layout_marginTop="150dp">
+        <TextView
+            android:id="@+id/TVjudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mau Foto apa hari ini?"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/warna1"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"/>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="30dp"
+          android:layout_below="@id/TVjudul">
+
+          <com.google.android.material.tabs.TabLayout
+              android:id="@+id/tabLayout"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:tabSelectedTextColor="@color/black"
+              android:background="@color/white"
+              app:tabTextColor="@color/warna1">
+
+              <com.google.android.material.tabs.TabItem
+                  android:id="@+id/tabStudio"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Foto Studio"/>
+
+              <com.google.android.material.tabs.TabItem
+                  android:id="@+id/tabOutdoor"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Foto Outdoor"/>
+
+              <com.google.android.material.tabs.TabItem
+                  android:id="@+id/tabLainnya"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Lainnya"/>
+
+          </com.google.android.material.tabs.TabLayout>
+
+          <androidx.viewpager.widget.ViewPager
+              android:id="@+id/viewPager"
+              android:layout_width="wrap_content"
+              android:layout_height="420dp"
+              android:layout_marginTop="48dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              tools:ignore="SpeakableTextPresentCheck" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+        android:id="@+id/background_tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundbottom"
+        android:elevation="20dp"
+        android:translationZ="20dp"
+        android:layout_marginTop="570dp">
+        <ImageView
+            android:id="@+id/IVhome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back to Home"
+                android:layout_below="@+id/IVhome"
+                android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

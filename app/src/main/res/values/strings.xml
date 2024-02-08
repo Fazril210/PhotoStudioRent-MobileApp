@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ThirtyOneStudio</string>
+    <string name="client_id">387378824016-6k7fv6e2jag9p6d0lofc7rul9no3113h.apps.googleusercontent.com</string>
+    <string-array name="sesi_array">
+        <item>Group</item>
+        <item>Wisuda</item>
+        <item>Family</item>
+        <item>Couple</item>
+        <item>Maternity</item>
+        <item>Prewedding</item>
+        <item>Prewedding+Gaun</item>
+        <item>Prewedding+Baju Adat Jawa</item>
+    </string-array>
+
+    <string-array name="paket_array">
+        <item>Mythic</item>
+        <item>Legend</item>
+        <item>Epic</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

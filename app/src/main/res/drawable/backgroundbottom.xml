@@ -1,0 +1,16 @@
+<!-- res/drawable/background_with_top_bottom_radius.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bagian atas dengan border radius -->
+    <item>
+        <shape>
+            <solid android:color="@color/warna5" />
+            <corners android:topLeftRadius="30dp" android:topRightRadius="30dp" />
+        </shape>
+    </item>
+    <!-- Bagian bawah tanpa border radius -->
+    <item android:top="30dp">
+        <shape>
+            <solid android:color="@color/warna5" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuatPesanan">
+
+    <ImageView
+        android:id="@+id/IVback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="29dp"
+        android:layout_toLeftOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Booking"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15pt"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/TVnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/ETnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundmain"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            android:layout_below="@id/TVnama"
+            android:elevation="12dp"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:hint="Masukkan nama lengkap"/>
+
+        <TextView
+            android:id="@+id/TVsesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:text="Sesi Foto"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/ETnama"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/sesifoto"
+            android:layout_width="170dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:spinnerMode="dropdown"
+            android:layout_height="100dp"
+            android:background="@drawable/backgroundmain"
+            android:elevation="12dp"
+            android:layout_below="@id/TVsesi"/>
+        <TextView
+            android:id="@+id/paket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/TVsesi"
+            android:layout_below="@id/ETnama"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="110dp"
+            android:text="Paket Foto"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <Spinner
+            android:id="@+id/paketfoto"
+            android:layout_width="150dp"
+            android:layout_toRightOf="@id/sesifoto"
+            android:layout_marginLeft="15dp"
+            android:elevation="12dp"
+            android:layout_below="@id/paket"
+            android:textAlignment="center"
+            android:spinnerMode="dropdown"
+            android:layout_height="100dp"
+            android:background="@drawable/backgroundregister"/>
+
+        <TextView
+            android:id="@+id/TVtanggal"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal penyewaan"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/sesifoto"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/ETtanggal"
+            android:layout_width="match_parent"
+            android:elevation="12dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/dateicon"
+            android:background="@drawable/backgroundmain"
+            android:padding="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:hint="dd/mm/yyyy"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/TVtanggal"/>
+
+        <TextView
+            android:id="@+id/TVdurasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jam penyewaan"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/ETtanggal"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/TVjam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="12dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/backgroundmain"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:hint="--.--"
+            android:textStyle="bold"
+            android:layout_below="@id/TVdurasi"
+            android:drawableRight="@drawable/timeicon"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundputih"
+        android:elevation="12dp"
+        android:translationZ="8dp"
+        android:layout_marginTop="585dp">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:id="@+id/total"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_lanjut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lanjut Bayar"
+            android:background="@drawable/backgroundmain"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:elevation="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+
+</RelativeLayout>

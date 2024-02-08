@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "387378824016",
+    "project_id": "thirtyonestudio-56bb0",
+    "storage_bucket": "thirtyonestudio-56bb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387378824016:android:5a531908829debefe22255",
+        "android_client_info": {
+          "package_name": "com.example.thirtyonestudio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7EV4EfsK1DxYelSsJuj-QTZFzO6dvG9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
